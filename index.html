@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<style>
+    body{
+        background: rgb(251, 251, 251);
+    }
+    .btn-save{
+        width: 100%;
+    }
+    .col-8{
+        border-left: 2px green solid;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row  mt-5">
+            <div class="col-4">
+                <form>
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <input type="text" name="title" id="title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea name="description" id="description" cols="32" rows="5" class="form-control"></textarea>
+                    </div>
+                    <button class="btn btn-primary mt-3 btn-save" id="save" type="button">Save</button>
+                </form>
+            </div>
+            <div class="col-8">
+                <div class="card p-3 m-2">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6>Title: Hello world</h6>
+                        </div>
+                        <div class="col-6">
+                            <input type="checkbox" name="isDone" id="isDone" class="float-end">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus possimus iste autem, tempora nam animi in
+                        reprehenderit voluptas labore facere eum, vero, nobis explicabo omnis nulla ipsum quisquam exercitationem deleniti.
+                    </p>
+                    <span><a href="#">Delete</a> | <a href="#">Edit</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
